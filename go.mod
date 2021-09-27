@@ -1,5 +1,5 @@
-module github.com/DQI308/stats
+module github.com/DQI308/stats/v2
 
 go 1.17
 
-require github.com/DQI308/bank v0.0.0-20210926172039-c2aed89d5168 // indirect
+require github.com/DQI308/bank/v2 v2.0.0
