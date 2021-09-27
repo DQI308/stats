@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/DQI308/bank/pkg/types"
+	"github.com/DQI308/bank/v2/pkg/types"
 )
 
 func ExampleAvg() {
@@ -11,12 +11,12 @@ func ExampleAvg() {
 			ID: 1,
 			Amount: 10_000,
 			Category: "mobile",
-			//Status: types.StatusOk,
+			Status: types.StatusOk,
 		},{
 			ID: 2,
 			Amount: 10_000,
 			Category: "mobile",
-			//Status: types.StatusOk,
+			Status: types.StatusOk,
 		},
 	}
 	fmt.Println(Avg(payment))
@@ -31,12 +31,12 @@ func ExampleTotalInCategory() {
 			ID: 1,
 			Amount: 10_000,
 			Category: "mobile",
-			//Status: types.StatusOk,
+			Status: types.StatusOk,
 		},{
 			ID: 2,
 			Amount: 10_000,
 			Category: "mobile",
-			//Status: types.StatusOk,
+			Status: types.StatusOk,
 		},
 	}
 	fmt.Println(TotalInCategory(payment,"mobile"))
